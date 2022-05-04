@@ -9,7 +9,8 @@ for itens in range(0, len(carrinho)):
     print(carrinho[itens])
 while True:
     try:
-        jogador = str(input('\033[1;32mADD\033[m para adicionar \033[1;31mREM\033[m para remover \033[1;34mV\033[m para ver o Carrinho: ')).strip().upper() # aqui a
+        jogador = str(input('\033[1;32mADD\033[m para adicionar \033[1;31mREM\033[m para remover \033[1;34mV\033[m '
+                            'para ver o Carrinho: ')).strip().upper() # aqui a
         # parte de entrada onde o usuário escolhe se quer add ou remover
         if jogador == 'ADD':
             add = str(input('Qual ítem deseja adicionar?: ')).strip().upper()
