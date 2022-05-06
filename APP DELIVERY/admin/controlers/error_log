@@ -1,0 +1,10 @@
+[03-Aug-2020 12:26:56 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[03-Aug-2020 12:26:56 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[03-Aug-2020 12:27:27 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[03-Aug-2020 12:27:27 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[03-Aug-2020 12:28:01 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[03-Aug-2020 12:28:01 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[04-May-2021 12:59:05 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-May-2021 12:59:05 America/Fortaleza] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home1/cardapi1/atualizado.cardapiofacil.online/_app/Config.inc.php on line 30
+[04-May-2021 12:59:19 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-May-2021 12:59:19 America/Fortaleza] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home1/cardapi1/atualizado.cardapiofacil.online/_app/Config.inc.php on line 30
