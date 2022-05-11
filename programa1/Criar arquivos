@@ -1,0 +1,115 @@
+dentro da função Open eu tenho que escolher o que a função vai fazer
+
+rt = ler em modo texto
+wt = escreve um arquivo de texto
+wt+ = escreve um arquivo de texto se não existir crie-o
+at+ = arquivo de texto ali ta falando append texto no arquivo.
+
+
+
+Modo	Descrição
+'r'	    Lê de um arquivo e retorna um erro se o arquivo não existir ( padrão ).
+'w'	    Grava em um arquivo e cria o arquivo se ele não existir ou substitui um arquivo existente.
+'x' 	Criação exclusiva que falha se o arquivo já existir.
+'a'	    Anexa a um arquivo e cria o arquivo se ele não existir ou substitui um arquivo existente.
+'b' 	Modo binário. Use este modo para arquivos não textuais, como imagens.
+'t'	    Modo de texto. Use apenas para arquivos textuais ( padrão ).
+'+'	    Ativa os métodos de leitura e gravação.
+
+
+O modo deve ter exatamente um método create( x)/read( r)/write( w)/append( a), no máximo um +. Omitir o modo padrão 'rt'para leitura de arquivos de texto.
+
+Abaixo está uma tabela que descreve como cada um dos modos se comporta quando invocado.
+
+Comportamento	Modos
+Leitura	r, r+, w+, a+,x+
+Escrever	r+, w, w+, a, a+,x+
+Criar	w, w+, a, a+, x,x+
+Início da posição do ponteiro	r, r+, w, w+, x,x+
+Fim da Posição do Ponteiro	a,a+
+Truncar (limpar conteúdo)	w,w+
+Deve existir	r,r+
+Não deve existir	x,x+
+
+
+Para ler um arquivo de texto em Python, carregue o arquivo usando a open()função:
+
+f = open("<file name>")
+
+O modo padrão é ler texto ( 'rt'). Portanto, o seguinte método é equivalente ao padrão:
+
+f = open("<file name>", "rt")
+
+Para ler arquivos no modo binário, use:
+
+f = open("<file name>", "rb")
+
+Adicionar +para abrir um arquivo no modo de leitura e gravação:
+
+f = open("<file name>", "r+")  # Textual read and write
+
+f = open("<file name>", "rt+") # Same as above
+
+f = open("<file name>", "rb+") # Binary read and write
+
+Para abrir um arquivo para gravar informações, use:
+
+f = open("<file name>", "w")
+
+O modo padrão é texto, então a linha a seguir é equivalente ao padrão:
+
+f = open("<file name>", "wt")
+
+Para escrever em modo binário, abra o arquivo com:
+
+f = open("<file name>", "wb")
+
+Adicione +para permitir a leitura do arquivo:
+
+f = open("<file name>", "w+")  # Textual write and read
+
+f = open("<file name>", "wt+") # Same as above
+
+f = open("<file name>", "wb+") # Binary write and read
+
+A open()função retorna um objeto de arquivo cujos detalhes dependem dos modos escolhidos.
+
+Modo Anexar
+O modo Anexar adiciona informações a um arquivo existente, colocando o ponteiro no final. Se um arquivo não existir, o modo de acréscimo cria o arquivo.
+
+Nota: A principal diferença entre os modos de gravação e anexação é que anexar não limpa o conteúdo de um arquivo.
+
+Use uma das seguintes linhas para abrir um arquivo no modo de acréscimo:
+
+f = open("<file name>", "a")  # Text append
+
+f = open("<file name>", "at") # Same as above
+
+f = open("<file name>", "ab") # Binary append
+
+Adicione o +sinal para incluir a funcionalidade de leitura.
+
+Modo de criação
+O modo de criação (também conhecido como criação exclusiva) cria um arquivo somente se ele não existir, posicionando o ponteiro no início do arquivo.
+
+Observação: se o arquivo existir, o Python gerará um erro. Use este modo para evitar sobrescrever arquivos existentes.
+
+Use uma das seguintes linhas para abrir um arquivo no modo de criação:
+
+f = open("<file name>", "x")  # Text create
+
+f = open("<file name>", "xt") # Same as above
+
+f = open("<file name>", "xb") # Binary create
+
+Adicione o +sinal ao modo incluir a funcionalidade de leitura a qualquer uma das linhas acima.
+
+Lendo arquivos em Python
+Depois de importar um arquivo para um objeto, o Python oferece vários métodos para ler o conteúdo.
+
+Use o read()método no objeto de arquivo e imprima o resultado. Por exemplo:
+
+f = open("file.txt")
+print(f.read(),end="")
+
+
